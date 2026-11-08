@@ -1,0 +1,13 @@
+node_modules
+dist
+deploy
+.DS_Store
+*.local
+*.log
+.vite.pid
+/freebuff-sites-build/
+
+# Local build and platform artifacts
+artifacts/
+.sites/
+.vite-report.pid
