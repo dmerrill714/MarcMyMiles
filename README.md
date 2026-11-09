@@ -17,7 +17,7 @@ MarcMyMiles - Driver Log is a mobile-first automatic mileage tracker for your ph
 - **Drive history** — time, duration, miles, and peak speed for each recorded trip, with delete controls.
 - **Mileage logs** — choose a **Day log**, **Week log**, **Month log**, or **YTD mileage** report. The logs name the vehicles driven in the period and list every trip with its vehicle, miles, and drive time; YTD shows total miles per vehicle.
 - **On-device storage** — completed trips live in `localStorage`; there is no account, server, or upload.
-- **Android install** — a persistent **Add to phone** button opens the Android APK download page on GitHub. Android/Chrome can also install the PWA for full-screen use through the one-time home-screen invitation. The invitation is shown once and does not return after it is shown or dismissed. iOS is not supported. A screen wake lock is requested while detection is active where the browser supports it.
+- **Android install** — a persistent **Add to phone** button opens the MarcMyMiles GitHub repository. Android/Chrome can also install the PWA for full-screen use through the one-time home-screen invitation. The invitation is shown once and does not return after it is shown or dismissed. iOS is not supported. A screen wake lock is requested while detection is active where the browser supports it.
 
 ## Run locally
 
@@ -73,7 +73,7 @@ Mileage is derived from GPS and is an estimate. It is not intended for legal, ta
 
 ## Install
 
-MarcMyMiles is an Android app. On Android, open the [live app](https://site-25d9c0a88fd3465b82be5cdf958ac770.freebuff.page/) in Chrome. After first-run setup, an **Add to phone** button stays beneath the app header and opens the [Android APK download page](https://github.com/dmerrill714/marcmymiles/blob/main/MarcMyMiles-DriverLog.apk). The one-time invitation offers the native PWA install prompt when available. iOS is not supported.
+MarcMyMiles is an Android app. On Android, open the [live app](https://site-25d9c0a88fd3465b82be5cdf958ac770.freebuff.page/) in Chrome. After first-run setup, an **Add to phone** button stays beneath the app header and opens the [MarcMyMiles GitHub repository](https://github.com/dmerrill714/MarcMyMiles). The one-time invitation offers the native PWA install prompt when available. iOS is not supported.
 
 MarcMyMiles also presents its install invitation once after setup on Android. Tap **Install MarcMyMiles** to open the native install prompt. The invitation is recorded as seen before it appears, so it will not return on later visits even if you choose **Not now**. You can still use the browser menu to install later.
 

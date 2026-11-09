@@ -5,8 +5,7 @@ interface InstallControlsProps {
   controller: InstallPromptController;
 }
 
-const APK_DOWNLOAD_URL =
-  'https://github.com/dmerrill714/marcmymiles/blob/main/MarcMyMiles-DriverLog.apk';
+const REPOSITORY_URL = 'https://github.com/dmerrill714/MarcMyMiles';
 
 export function InstallButton({ controller }: InstallControlsProps) {
   if (!controller.available) return null;
@@ -14,11 +13,11 @@ export function InstallButton({ controller }: InstallControlsProps) {
   return (
     <a
       className="install-trigger"
-      href={APK_DOWNLOAD_URL}
+      href={REPOSITORY_URL}
       target="_blank"
       rel="noopener noreferrer"
-      title="Open the MarcMyMiles APK download page"
-      aria-label="Open the MarcMyMiles APK download page"
+      title="Open the MarcMyMiles GitHub repository"
+      aria-label="Open the MarcMyMiles GitHub repository"
     >
       <InstallIcon size={15} />
       <span>Add to phone</span>
