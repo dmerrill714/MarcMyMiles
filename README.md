@@ -71,7 +71,7 @@ Mileage is derived from GPS and is an estimate. It is not intended for legal, ta
 
 ## Install
 
-On a phone, open the [live app][(https://site-25d9c0a88fd3465b82be5cdf958ac770.freebuff.page)](https://github.com/dmerrill714/marcmymiles-driver-log/blob/main/MarcMyMiles-DriverLog.apk) in Safari or Chrome. After first-run setup, an **Add to phone** button stays beneath the app header. On Android/Chrome it opens the browser's native install prompt when available; on iPhone and iPad it shows the Share → **Add to Home Screen** steps.
+On a phone, open the [live app](https://site-25d9c0a88fd3465b82be5cdf958ac770.freebuff.page)(https://github.com/dmerrill714/marcmymiles-driver-log/blob/main/MarcMyMiles-DriverLog.apk) in Safari or Chrome. After first-run setup, an **Add to phone** button stays beneath the app header. On Android/Chrome it opens the browser's native install prompt when available; on iPhone and iPad it shows the Share → **Add to Home Screen** steps.
 
 MarcMyMiles also presents its install invitation once after setup. On Android/Chrome, tap **Install MarcMyMiles** to open the native install prompt. On iPhone and iPad, tap **Show me how** for the Share → **Add to Home Screen** steps. The invitation is recorded as seen before it appears, so it will not return on later visits even if you choose **Not now**. You can still use **Add to phone** or the browser menu to install later.
 
