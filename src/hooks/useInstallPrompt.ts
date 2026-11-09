@@ -64,7 +64,7 @@ export function useInstallPrompt(enabled: boolean): InstallPromptController {
     if (!eligible) return;
 
     const timer = window.setTimeout(() => {
-      // A tap on Add to phone marks the invitation seen before this timer fires.
+      // Do not show the invitation if it was already seen or dismissed.
       if (hasSeenInstallPrompt()) return;
 
       // Mark it before showing so an ignored or interrupted prompt is never repeated.
@@ -129,7 +129,7 @@ export function useInstallPrompt(enabled: boolean): InstallPromptController {
   }, [installEvent, promptInstall]);
 
   return {
-    available: enabled && !standalone && (platform === 'ios' || platform === 'android'),
+    available: enabled && !standalone && platform === 'android',
     open,
     stepsOpen,
     installing,

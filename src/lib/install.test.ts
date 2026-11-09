@@ -9,9 +9,9 @@ const eligible: InstallPromptConditions = {
 };
 
 describe('install prompt', () => {
-  it('offers installation once setup is complete on a phone', () => {
+  it('offers installation once setup is complete on Android', () => {
     expect(shouldOfferInstallPrompt(eligible)).toBe(true);
-    expect(shouldOfferInstallPrompt({ ...eligible, platform: 'ios' })).toBe(true);
+    expect(shouldOfferInstallPrompt({ ...eligible, platform: 'ios' })).toBe(false);
   });
 
   it('never repeats after the invitation has been shown', () => {

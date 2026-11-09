@@ -5,21 +5,24 @@ interface InstallControlsProps {
   controller: InstallPromptController;
 }
 
+const APK_DOWNLOAD_URL =
+  'https://github.com/dmerrill714/marcmymiles/blob/main/MarcMyMiles-DriverLog.apk';
+
 export function InstallButton({ controller }: InstallControlsProps) {
   if (!controller.available) return null;
 
   return (
-    <button
-      type="button"
+    <a
       className="install-trigger"
-      onClick={() => void controller.start()}
-      disabled={controller.installing}
-      title="Add MarcMyMiles to your phone"
-      aria-label="Add MarcMyMiles to your phone"
+      href={APK_DOWNLOAD_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Open the MarcMyMiles APK download page"
+      aria-label="Open the MarcMyMiles APK download page"
     >
       <InstallIcon size={15} />
-      <span>{controller.installing ? 'Opening install…' : 'Add to phone'}</span>
-    </button>
+      <span>Add to phone</span>
+    </a>
   );
 }
 
@@ -55,7 +58,7 @@ export function InstallPrompt({ controller }: InstallControlsProps) {
           </h2>
           <p className="install-body">
             Install it for full-screen tracking and one-tap access. This is the only automatic
-            reminder; you can reopen it from <strong>Add to phone</strong>.
+            reminder; use your browser menu if you need the install steps again.
           </p>
         </div>
       </div>
@@ -90,8 +93,8 @@ export function InstallPrompt({ controller }: InstallControlsProps) {
             </ol>
           )}
           <p className="install-note">
-            Everything stays on this phone. You can close this and use Add to phone or your
-            browser&apos;s menu whenever you are ready.
+            Everything stays on this phone. You can close this and use your browser&apos;s menu
+            whenever you are ready.
           </p>
         </div>
       )}

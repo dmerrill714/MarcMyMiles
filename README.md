@@ -17,7 +17,7 @@ MarcMyMiles - Driver Log is a mobile-first automatic mileage tracker for your ph
 - **Drive history** — time, duration, miles, and peak speed for each recorded trip, with delete controls.
 - **Mileage logs** — choose a **Day log**, **Week log**, **Month log**, or **YTD mileage** report. The logs name the vehicles driven in the period and list every trip with its vehicle, miles, and drive time; YTD shows total miles per vehicle.
 - **On-device storage** — completed trips live in `localStorage`; there is no account, server, or upload.
-- **Installable PWA** — a persistent **Add to phone** button installs the app for full-screen use. Android and Chrome get the native install prompt when available; iPhone and iPad get Share → Add to Home Screen steps. After first-run setup, MarcMyMiles also shows a single home-screen invitation and does not ask again once it is shown or dismissed. A screen wake lock is requested while detection is active where the browser supports it.
+- **Android install** — a persistent **Add to phone** button opens the Android APK download page on GitHub. Android/Chrome can also install the PWA for full-screen use through the one-time home-screen invitation. The invitation is shown once and does not return after it is shown or dismissed. iOS is not supported. A screen wake lock is requested while detection is active where the browser supports it.
 
 ## Run locally
 
@@ -63,19 +63,19 @@ Each downloaded report includes a sequential **Generated log #**, starting at 1.
 
 ## GPS access
 
-During first-run setup the app asks for location access and shows the current permission state. If the browser blocks it, open **GPS setting help** for the steps to allow location on iPhone, Android, or desktop, then return to MarcMyMiles and tap **Check GPS again**. The app cannot change phone settings itself; the browser or operating system owns that permission.
+During first-run setup the app asks for location access and shows the current permission state. If the browser blocks it, open **GPS setting help** for the steps to allow location on Android or desktop, then return to MarcMyMiles and tap **Check GPS again**. The app cannot change phone settings itself; the browser or operating system owns that permission.
 
 ## Browser limitations
 
-This is a web app, not a native background tracker. Mobile browsers suspend geolocation when the tab is backgrounded or the screen locks. **Keep MarcMyMiles open while driving** for reliable recording. Where supported, the app requests a screen wake lock; Safari on iOS may not support that API. If the browser stops location updates, MarcMyMiles keeps the trip open when possible and shows a searching state, but gaps cannot be recovered precisely.
+This is a web app, not a native background tracker. Mobile browsers suspend geolocation when the tab is backgrounded or the screen locks. **Keep MarcMyMiles open while driving** for reliable recording. Where supported, the app requests a screen wake lock; some browsers may not support that API. If the browser stops location updates, MarcMyMiles keeps the trip open when possible and shows a searching state, but gaps cannot be recovered precisely.
 
 Mileage is derived from GPS and is an estimate. It is not intended for legal, tax, or reimbursement records without verification against your odometer.
 
 ## Install
 
-On a phone, open the [live app](https://site-25d9c0a88fd3465b82be5cdf958ac770.freebuff.page/) in Safari or Chrome. After first-run setup, an **Add to phone** button stays beneath the app header. On Android/Chrome it opens the browser's native install prompt when available; on iPhone and iPad it shows the Share → **Add to Home Screen** steps.
+MarcMyMiles is an Android app. On Android, open the [live app](https://site-25d9c0a88fd3465b82be5cdf958ac770.freebuff.page/) in Chrome. After first-run setup, an **Add to phone** button stays beneath the app header and opens the [Android APK download page](https://github.com/dmerrill714/marcmymiles/blob/main/MarcMyMiles-DriverLog.apk). The one-time invitation offers the native PWA install prompt when available. iOS is not supported.
 
-MarcMyMiles also presents its install invitation once after setup. On Android/Chrome, tap **Install MarcMyMiles** to open the native install prompt. On iPhone and iPad, tap **Show me how** for the Share → **Add to Home Screen** steps. The invitation is recorded as seen before it appears, so it will not return on later visits even if you choose **Not now**. You can still use **Add to phone** or the browser menu to install later.
+MarcMyMiles also presents its install invitation once after setup on Android. Tap **Install MarcMyMiles** to open the native install prompt. The invitation is recorded as seen before it appears, so it will not return on later visits even if you choose **Not now**. You can still use the browser menu to install later.
 
 First-run setup asks for a vehicle and location access; motion permission is requested when you press **Start drive detection**.
 

@@ -14,19 +14,14 @@ export interface InstallPromptConditions {
   platform: LocationPlatform;
 }
 
-/** The install invitation is only for phones and is never repeated once shown. */
+/** The install invitation is Android-only and is never repeated once shown. */
 export function shouldOfferInstallPrompt({
   enabled,
   seen,
   standalone,
   platform,
 }: InstallPromptConditions): boolean {
-  return (
-    enabled &&
-    !seen &&
-    !standalone &&
-    (platform === 'ios' || platform === 'android')
-  );
+  return enabled && !seen && !standalone && platform === 'android';
 }
 
 export function isStandaloneMode(): boolean {

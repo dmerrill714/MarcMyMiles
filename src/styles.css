@@ -105,6 +105,7 @@ a:focus-visible {
   font-size: 0.61rem;
   font-weight: 750;
   letter-spacing: 0.09em;
+  text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
 }
