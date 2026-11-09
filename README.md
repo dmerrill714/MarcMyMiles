@@ -4,7 +4,7 @@
 MarcMyMiles - Driver Log is a mobile-first automatic mileage tracker for your phone. It watches your speed, starts recording when you drive above 20 mph, and keeps weekly, monthly, and year-to-date totals on the device.
 
 **Live app:** [https://site-25d9c0a88fd3465b82be5cdf958ac770.freebuff.page
-](https://github.com/dmerrill714/marcmymiles-driver-log/blob/main/MarcMyMiles-DriverLog.apk)
+]
 ## What it does
 
 - **First-run vehicle setup** — name your vehicle (and optionally add a plate) before detection starts.
