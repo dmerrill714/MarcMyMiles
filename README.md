@@ -1,3 +1,5 @@
+## SELECT CODE, THEN SELECT THE .APK TO INSTALL THE APP TO YOUR PHONE!!!
+
 [Watch Demo](https://youtu.be/ISYBe8L6hEc)
 # MarcMyMiles - Driver Log
 
